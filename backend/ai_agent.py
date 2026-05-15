@@ -31,7 +31,7 @@ print("TABLES:", db.get_usable_table_names())
 
 llm = ChatGroq(
     api_key=os.getenv("GROQ_API_KEY"),
-    model="openai/gpt-oss-120b",
+    model=os.getenv("Model"),
     temperature=0
 )
 
